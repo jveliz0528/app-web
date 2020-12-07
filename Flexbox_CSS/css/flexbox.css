@@ -1,0 +1,85 @@
+    html {
+      box-sizing: border-box;
+      font-size: 16px;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+
+    a[href="#top"] {
+      margin: 1rem;
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 50vh;
+      text-align: center;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .menu {
+      margin-bottom: 100vh;
+      font-size: 125%;
+    }
+
+    .menu li {
+      margin-bottom: 1rem;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 80%;
+      height: auto;
+      background-color: skyblue;
+      border: medium solid #000;
+    }
+
+    .item {
+    }
+
+/*Video #2*/
+.clase_1{
+  display: flex;
+  display: inline-flex;
+}
+
+/*Video #3*/
+.clase_2{
+  display: flex;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction:column ;
+  flex-direction: column-reverse;
+}
+ /*flex-wrap*/
+  .clase_21{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  
+  }
+
+  .clase_21 .item{
+    width: 20%;
+    height: 20%;
+    border: medium solid rgb(82, 199, 245);
+
+  }
