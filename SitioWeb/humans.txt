@@ -1,0 +1,22 @@
+/* bextlan.com | lugar de... bits, vectores y pixeles. - http://bextlan.com */
+
+/* TEAM */
+	Creator: Jonathan MirCha
+	Contact: cursos [at] bextlan.com
+	Twitter: @bextlan
+	From: Mexico city, México
+	
+/* IN MEMORIAL */
+	Bryan 
+
+/* THANKS */
+	Belem, Letty, Leon, O
+	Junior, Camila, Lorenzo, Mojo
+	ICONOS http://www.iconos.edu.mx
+	
+/* SITE */
+	Last update: 2012/02/08
+	Language: Español
+	Standars: HTML5, CSS3, JavaScript
+	Components: jQuery
+	Software: SublimeText2, Notepad++, Adobe Suite CS5 (Flash, Photoshop, Fireworks)
