@@ -1,0 +1,58 @@
+body,html,  h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre,  dl, dt, dd, form, a, fieldset, input, th, tdcode, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+
+table { 
+  border-collapse:
+  collapse; border-spacing: 0; 
+}
+
+td, th, caption {
+   font-weight: normal;
+   text-align: left; 
+  }
+
+img, fieldset {
+  border: 0;
+ }
+
+ol { 
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+ul { 
+  padding-left: 1.4em; 
+  list-style:square; 
+}
+
+q:before, q:after { 
+  content:'';
+}
+
+a
+{
+color: black;
+text-decoration: none;
+}
+ 
+a:hover
+{
+text-decoration: underline;
+}
+
+/*@jonmircha*/
+@font-face
+{
+	font-family: "Chalet";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Chalet.eot);
+	src: url(../fonts/Chalet.eot?#iefix) format("embedded-opentype"),
+		url(../fonts/Chalet.woff) format("woff"),
+		url(../fonts/Chalet.ttf) format("truetype"),
+		url(../fonts/Chalet.svg#Chalet) format("svg");
+}
