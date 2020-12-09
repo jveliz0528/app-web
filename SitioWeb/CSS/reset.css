@@ -1,50 +1,16 @@
-body,html,  h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre,  dl, dt, dd, form, a, fieldset, input, th, tdcode, address, variable, form, fieldset, blockquote {
- padding: 0;
- margin: 0;
- font-size: 100%;
- font-weight: normal;
-}
-
-table { 
-  border-collapse:
-  collapse; border-spacing: 0; 
-}
-
-td, th, caption {
-   font-weight: normal;
-   text-align: left; 
-  }
-
-img, fieldset {
-  border: 0;
- }
-
-ol { 
-  padding-left: 1.4em;
-  list-style: decimal;
-}
-
-ul { 
-  padding-left: 1.4em; 
-  list-style:square; 
-}
-
-q:before, q:after { 
-  content:'';
-}
-
-a
-{
-color: black;
-text-decoration: none;
-}
- 
-a:hover
-{
-text-decoration: underline;
-}
-
 /*@jonmircha*/
+/* reseteo universal */
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+article,  figcaption, figure, footer, header, hgroup, nav, section{
+  display: block;
+}
+
+/* estilos del sitio */
 @font-face
 {
 	font-family: "Chalet";
@@ -55,4 +21,15 @@ text-decoration: underline;
 		url(../fonts/Chalet.woff) format("woff"),
 		url(../fonts/Chalet.ttf) format("truetype"),
 		url(../fonts/Chalet.svg#Chalet) format("svg");
+}
+
+@font-face {
+    font-family: "Pecita";
+    src: url("../fonts/Pecita.eot");
+    src: url("../fonts/Pecita.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Pecita.woff") format("woff"),
+         url("../fonts/Pecita.ttf") format("truetype"),
+         url("../fonts/Pecita.svg#Pecita") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
