@@ -21,6 +21,16 @@ figcaption {
 	text-align: center;
 }
 
+h2, h3 {
+	color: #F90;
+	font-family: "Pecita", Helvetica, Verdana;
+}
+
+hr {
+	border: 1px dashed #FFF;
+	margin: 1em 0;
+}
+
 img, video {
 	max-width: 100%;
 }
@@ -102,6 +112,24 @@ aside img, #img-acerca img, #video-acerca, #img-servicios {
 	border-radius: 0.5em;	
 }
 
+article#descripcion-acerca, article#multimedia-acerca{
+	background: #1E6381;
+	border-radius: .5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	min-height: 543px;
+	padding: .5em;
+	text-align: justify;
+	vertical-align: top;
+	width: 55%;
+}
+
+article#multimedia-acerca{
+	text-align: center;
+	width: 40%;
+}
+
 footer {
 	color: #000;
 	font-size: 0.85em;
@@ -152,6 +180,10 @@ footer {
 	aside{
 		width: 20%;
   }
+
+  article#descripcion-acerca, article#multimedia-acerca, #img-servicios, article#nuestros-servicios {
+		width: 45%;
+	}
 }
 
   @media screen and (max-width: 800px){
@@ -171,13 +203,13 @@ footer {
 		width: 98%;
   }	
   
-  	section#principal{
-    margin-bottom: 0.2em;
-	}
-
-	section#principal, aside{
-    display: block;
-    white-space: 95%;
+	section#principal, article#descripcion-acerca, article#servicio2{
+		margin-bottom: 0.2em;
+  }
+  
+	section#principal, aside, article#descripcion-acerca, article#multimedia-acerca, article#servicio2, article#servicio3 {
+		display: block;
+		width: 95%;
 	}
 }
 
