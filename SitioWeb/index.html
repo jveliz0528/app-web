@@ -8,9 +8,25 @@
     Desing." />
   <title>Sitio con Responsive Web Desing HTML5, CSS3 y JQuery</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="author" type="text/plain" href="humans.txt" />
-
 </head>
+<!-- Place either at the bottom in the <head> of your page or inside your CSS -->
+<style type="text/css">
+  .flex-caption {
+    width: 96%;
+    padding: 2%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  li.css a {
+    border-radius: 0;
+  }
+</style>
 
 <body>
   <header>
@@ -32,7 +48,41 @@
   <section id="contenido">
     <section id="principal">
       <article id="galeria-inicio">
-        Aqui habra una galeria con JQuery
+        <div class="flexslider" id="f1" style="direction:rtl">
+          <ul class="slides">
+            <li>
+              <a href="http://bextlan.com"><img src="img/slide-0.png" /></a>
+              <p class="flex-caption">bextlan.com | lugar de... bits, vectores y pixeles.</p>
+            </li>
+            <li>
+              <img src="img/slide-1.png" />
+              <p class="flex-caption">Curso HTML5</p>
+            </li>
+            <li>
+              <img src="img/slide-2.png" />
+            </li>
+            <li>
+              <a href="http://bextlan.com"><img src="img/slide-3.png" /></a>
+              <p class="flex-caption">Curso PHP</p>
+            </li>
+          </ul>
+        </div>
+        <div class="flexslider carousel" id="f2" style="direction:rtl">
+          <ul class="slides">
+            <li>
+              <img src="img/slide-0.png" />
+            </li>
+            <li>
+              <img src="img/slide-1.png" />
+            </li>
+            <li>
+              <img src="img/slide-2.png" />
+            </li>
+            <li>
+              <img src="img/slide-3.png" />
+            </li>
+          </ul>
+        </div>
       </article>
     </section>
     <aside>
@@ -45,9 +95,48 @@
     <a rel="author" href="http://twitter.com/bextlan" target="_blanck">@bextlan</a>
   </footer>
 </body>
+
+<!--Reset styles-->
 <link rel="stylesheet" href="css/reset.css" />
+
+
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="author" type="text/plain" href="humans.txt" />
+
+<!--Del proyecto-->
 <link rel="stylesheet" href="css/estilos.css" />
 
+<!--Libreria-->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- FlexSlider -->
+<script src="js/jquery.flexslider.js"></script>
+<script>
+  $(window).load(function () {
+    $('#f1').flexslider({
+      animation: "slide",
+      rtl: true,
+      start: function (slider) {
+        $('body').removeClass('loading');
+      }
+    });
+
+    $('#f2').flexslider({
+      animation: "slide",
+      animationLoop: false,
+      itemWidth: 210,
+      itemMargin: 5,
+      pausePlay: true,
+      mousewheel: true,
+      rtl: true,
+      asNavFor: '.flexslider'
+    });
+  });
+</script>
+
+<!--Del proyecto-->
+<script src="js/estilos.js"></script>
 
 <!--[if lt IE 9]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
